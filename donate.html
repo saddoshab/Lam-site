@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little And More - LAM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">
+   <img src="logo.png">
+   
+</a>
+    <!-- Hamburger Button - only shows on mobile -->
+    <button class="menu-btn" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="impact.html">Impact</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="programs">
+  <h2>Support Little And More</h2>
+  <p>Your donation helps us reach more communities.</p>
+  
+  <div class="donate-wrapper">
+    <div class="donate-card">
+    <h3>Donate via Mobile Money</h3>
+    <p><b>Till Number:</b> 123456 <br> <b>MTN Mobile Money:</b> +211 9XX XXX XXX</p>
+  </div>
+</div>
+  <p>Or fill this form and we will contact you:</p>
+  <form action="https://formspree.io/f/xeebddrb" method="POST" class="lam-form">
+    <input type="hidden" name="_subject" value="New Donation Inquiry - LAM">
+    
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="number" name="amount" placeholder="Amount you wish to donate" required>
+    <button type="submit" class="btn btn-primary">I Want to Donate</button>
+  </form>
+</section>
+<footer id="contact">
+    <p><b>Little and More (LAM)</b></p>
+    <p>South Sudan | Email: <a href="mailto:info@lam-ss.org">littleandmorengo@gmail.com</a> | WhatsApp: +211928334633</p>
+    <p>© 2026 Little and More. All rights reserved.</p>
+  </footer>
+   <script src="scripts.js"></script>
+  </body>
+</html>

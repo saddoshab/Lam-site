@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Little and More</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">
+   <img src="logo.png">
+   
+</a>
+    <!-- Hamburger Button - only shows on mobile -->
+    <button class="menu-btn" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="impact.html">Impact</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="contact-page">
+  <h1>Contact Us</h1>
+  <p class="subtitle">We’d love to hear from you. Reach out to LAM today.</p>
+
+  <div class="contact-container">
+    
+    <!-- LEFT: Info + Map -->
+    <div class="contact-info">
+      <h2>Get In Touch</h2>
+      
+      <div class="info-item">
+        <strong>📍 Address:</strong>
+        <p class="elementor-icon-box-description">Nile Hope Building, Bilpham Road, Juba, South Sudan</p>
+        <!-- Put your real street/office here -->
+      </div>
+
+      <div class="info-item">
+        <strong>📧 Email:</strong>
+        <p><a href="mailto:littleandmorengo@gmail.com">littleandmorengo@gmail.com</a></p>
+      </div>
+
+      <div class="info-item">
+        <strong>📱 WhatsApp:</strong>
+        <p><a href="https://wa.me/211928334633" target="_blank">+211 928 334 633</a></p>
+      </div>
+
+      <div class="info-item">
+        <strong>Follow Us:</strong>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61557022136575">Facebook</a>
+          <a href="https://twitter.com/" target="_blank">Twitter/X</a>
+          <a href="https://instagram.com/" target="_blank">Instagram</a>
+        </div>
+      </div>
+
+      <!-- GOOGLE MAP -->
+      <div class="map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253.11412705265266!2d31.581052245473483!3d4.864856981362659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x171281001a13721d%3A0xfe23ec73280e3b6a!2sNile%20Hope!5e1!3m2!1sen!2s!4v1783498211280!5m2!1sen!2s" 
+          width="100%" 
+          height="250" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form -->
+    <div class="contact-form">
+      <h2>Send a Message</h2>
+      <form action="https://formspree.io/f/mlgykpvj" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject">
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <input type="hidden" name="_replyto" value="email">
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</main>
+   <footer id="contact">
+    <p><b>Little and More (LAM)</b></p>
+    <p>South Sudan | Email: <a href="mailto:info@lam-ss.org">littleandmorengo@gmail.com</a> | WhatsApp: +211928334633</p>
+    <p>© 2026 Little and More. All rights reserved.</p>
+  </footer>
+   <script src="scripts.js"></script>
+</body>
+</html>

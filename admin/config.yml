@@ -1,0 +1,40 @@
+backend:
+  name: git-gate-way
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+    - name: "news"
+    label: "News Updates"
+    folder: "content/news"
+    create: true
+    fields:
+            - {label: "Title", name: "title", widget: "string"}
+            - {label: "Publish Date", name: "date", widget: "datetime"}
+            - {label: "Image", name: "image", widget: "image"}
+            - {label: "Summary", name: "summary", widget: "text"}
+
+    - name: "articles"
+    label: "Articles & Stories"
+    folder: "content/articles"
+    create: true
+    fields:
+            - {label: "Title", name: "title", widget: "string"}
+            - {label: "Publish Date", name: "date", widget: "datetime"}
+            - {label: "Featured Image", name: "image", widget: "image"}
+            - {label: "Author", name: "author", widget: "string"}
+            - {label: "Summary", name: "summary", widget: "text"}
+            - {label: "Body", name: "body", widget: "markdown"}
+
+    - name: "stories"
+    label: "Success Stories"
+    folder: "content/stories"
+    create: true
+    fields:
+            - {label: "Quote Title", name: "title", widget: "string"}
+            - {label: "Publish Date", name: "date", widget: "datetime"}
+            - {label: "Photo", name: "image", widget: "image"}
+            - {label: "Location", name: "location", widget: "string"}
+            - {label: "Quote", name: "summary", widget: "text"}

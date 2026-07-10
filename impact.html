@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Impact - Little and More</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">
+   <img src="logo.png">
+   
+</a>
+    <!-- Hamburger Button - only shows on mobile -->
+    <button class="menu-btn" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="impact.html">Impact</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section id="impact" class="impact">
+    <h2>Our Impact</h2>
+    <p style="max-width:700px; margin:0 auto 40px; color:var(--white); font-weight: bold;">Here’s the difference we’re making together across South Sudan</p>
+    <div class="impact-stats">
+  <div class="stat">
+    <h3 class="counter" data-target="10000">0</h3>
+    <p>Children Reached</p>
+  </div>
+
+  <div class="stat">
+    <h3 class="counter" data-target="25">0</h3>
+    <p>Communities Served</p>
+  </div>
+
+  <div class="stat">
+    <h3 class="counter" data-target="15">0</h3>
+    <p>Projects Active</p>
+  </div>
+</div>
+  </section>
+  <section class="programs">
+  <h2 style="text-align:center; width:100%; color:var(--red); margin-bottom:40px;">Activities Accomplished</h2>
+  
+  <div class="card">
+    <img src="images/activity1.jpg" alt="Food Distribution" style="width:100%; border-radius:8px; margin-bottom:15px;">
+    <h3>Food Distribution - Juba</h3>
+    <p>300 families supported with food supplies, April 2026</p>
+  </div>
+
+  <div class="card">
+    <img src="images/activity2.jpg" alt="School Supplies" style="width:100%; border-radius:8px; margin-bottom:15px;">
+    <h3>School Supplies - Central Equatoria</h3>
+    <p>500 students received learning materials, March 2026</p>
+  </div>
+</section>
+<div class="section-divider"></div>
+<section class="impact-stories">
+  <h2>Stories of Change</h2>
+  <p class="stories-intro">Behind every number is a family, a child, a community.</p>
+ <div class="story-card-wrapper">
+  <!-- Stories will load here automatically from Decap -->
+</div>
+</section>
+<section class="impact-map">
+  <h2>Where We Work</h2>
+  <p>25 communities across Central Equatoria, Eastern Equatoria, and more.</p>
+  <img src="images/ssd-map.png" alt="Map of South Sudan with LAM locations" class="map-img">
+</section>
+</main>
+   <footer id="contact">
+    <p><b>Little and More (LAM)</b></p>
+    <p>South Sudan | Email: <a href="mailto:info@lam-ss.org">littleandmorengo@gmail.com</a> | WhatsApp: +211928334633</p>
+    <p>© 2026 Little and More. All rights reserved.</p>
+  </footer>
+ <script src="scripts.js"></script>
+ <script>
+// Count up animation
+const counters = document.querySelectorAll('.counter');
+const speed = 200; // lower = faster
+
+counters.forEach(counter => {
+  const updateCount = () => {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText;
+    
+    // how much to add each time
+    const increment = target / speed; 
+
+    if(count < target) {
+      counter.innerText = Math.ceil(count + increment).toLocaleString(); // adds commas: 10,000
+      setTimeout(updateCount, 20);
+    } else {
+      counter.innerText = target.toLocaleString() + '+'; // add the + back
+    }
+  }
+  
+  updateCount();
+});
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="js/load-content.js"></script>
+  <script>loadPosts('stories', 'story-card-wrapper')</script>
+</body>
+</html>

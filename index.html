@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little And More - LAM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">
+   <img src="logo.png">
+   
+</a>
+    <!-- Hamburger Button - only shows on mobile -->
+    <button class="menu-btn" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="impact.html">Impact</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+  
+  <!-- SLIDE 1 -->
+  <div class="hero-slide active" style="background-image: url('hero.png')">
+    <div class="hero-content">
+      <h1>Welcome to Little and More</h1>
+      <p>Building a healthier, more educated South Sudan, one community at a time.</p>
+       <a href="programs.html" class="btn btn-primary">Our Programs</a> 
+      <a href="donate.html" class="btn btn-secondary">Donate</a>   
+    </div>
+  </div>
+
+  <!-- SLIDE 2 -->
+  <div class="hero-slide" style="background-image: url('hero1.jpg')">
+    <div class="hero-content">
+      <h1>Health Programs That Save Lives</h1>
+      <p>From maternal care to community clinics, we bring healthcare closer to home.</p>
+       <a href="programs.html" class="btn btn-primary">Our Programs</a> 
+      <a href="donate.html" class="btn btn-secondary">Donate</a> 
+    </div>
+  </div>
+
+  <!-- SLIDE 3 -->
+  <div class="hero-slide" style="background-image: url('hero2.jpg')">
+    <div class="hero-content">
+      <h1>Education is the Future</h1>
+      <p>Empowering children and youth with skills for a brighter tomorrow.</p>
+       <a href="programs.html" class="btn btn-primary">Our Programs</a>
+      <a href="donate.html" class="btn btn-secondary">Donate</a>     
+    </div>
+  </div>
+
+  <!-- DOTS -->
+  <div class="hero-dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</section>
+
+  <section id="programs" class="programs">
+    <div class="card">
+      <h3>Protection</h3>
+      <p>Safeguarding rights and dignity for vulnerable children and families.</p>
+       <div class="read-more-btn">
+    <a href="programs.html" class="btn">Read More</a>
+  </div>
+    </div>
+    <div class="card">
+      <h3>Education</h3>
+      <p>Access to quality learning for every child.</p>
+       <div class="read-more-btn">
+    <a href="programs.html" class="btn">Read More</a>
+  </div>
+    </div>
+    <div class="card">
+      <h3>Health</h3>
+      <p>Improving community health and wellbeing.</p>
+       <div class="read-more-btn">
+    <a href="programs.html" class="btn">Read More</a>
+  </div>
+    </div>
+    <div class="card">
+      <h3>Livelihood</h3>
+      <p>Building skills and opportunities for self-reliance.</p>
+       <div class="read-more-btn">
+    <a href="programs.html" class="btn">Read More</a>
+  </div>
+    </div>
+  </section>
+  <section id="news" class="programs" style="background: #FFF8E1; padding: 60px 20px;">
+  <h2 style="text-align:center; width:100%; color:var(--red); margin-bottom:40px;">News and Articles</h2>
+  
+  <section class="news-grid">
+  <!-- Latest 3 news will load here automatically -->
+</section>
+</section>
+</main>
+  <footer id="contact">
+    <p><b>Little and More (LAM)</b></p>
+    <p>South Sudan | Email: <a href="mailto:info@lam-ss.org">littleandmorengo@gmail.com</a> | WhatsApp: +211928334633</p>
+    <p>© 2026 Little and More. All rights reserved.</p>
+  </footer>
+ <script src="scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="js/load-content.js"></script>
+<script>
+  loadPosts('news', 'news-grid', true)      // true = only 3 newest
+  loadPosts('articles', 'news-grid', true)  // true = only 3 newest
+</script>
+</body>
+</html>
