@@ -1,36 +1,52 @@
 backend:
   name: git-gateway
   branch: main
-
 publish_mode: editorial_workflow
 media_folder: uploads
 public_folder: /uploads
-
 collections:
-    - name: news
-    label: News
-    folder: content/news
+    - name: "news"
+    label: "News"
+    folder: "content/news"
     create: true
     slug: "{{slug}}"
     fields:
-            - {label: Title, name: title, widget: string}
-            - {label: Date, name: date, widget: datetime}
-            - {label: Body, name: body, widget: markdown}
-    - name: articles
-    label: Articles
-    folder: content/articles
+            - label: "Title"
+        name: "title"
+        widget: "string"
+            - label: "Date"
+        name: "date"
+        widget: "datetime"
+            - label: "Body"
+        name: "body"
+        widget: "markdown"
+    - name: "articles"
+    label: "Articles"
+    folder: "content/articles"
     create: true
     slug: "{{slug}}"
     fields:
-            - {label: Title, name: title, widget: string}
-            - {label: Date, name: date, widget: datetime}
-            - {label: Body, name: body, widget: markdown}
-    - name: stories
-    label: Stories
-    folder: content/stories
+            - label: "Title"
+        name: "title"
+        widget: "string"
+            - label: "Date"
+        name: "date"
+        widget: "datetime"
+            - label: "Body"
+        name: "body"
+        widget: "markdown"
+    - name: "stories"
+    label: "Stories"
+    folder: "content/stories"
     create: true
     slug: "{{slug}}"
     fields:
-            - {label: Title, name: title, widget: string}
-            - {label: Date, name: date, widget: datetime}
-            - {label: Body, name: body, widget: markdown}
+            - label: "Title"
+        name: "title"
+        widget: "string"
+            - label: "Date"
+        name: "date"
+        widget: "datetime"
+            - label: "Body"
+        name: "body"
+        widget: "markdown"
