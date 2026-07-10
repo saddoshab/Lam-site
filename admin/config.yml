@@ -1,40 +1,37 @@
 backend:
-  name: git-gate-way
+  name: git-gateway
   branch: main
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "uploads"
+public_folder: "/uploads"
 
 collections:
     - name: "news"
-    label: "News Updates"
+    label: "News"
     folder: "content/news"
     create: true
+    slug: "{{slug}}"
     fields:
             - {label: "Title", name: "title", widget: "string"}
-            - {label: "Publish Date", name: "date", widget: "datetime"}
-            - {label: "Image", name: "image", widget: "image"}
-            - {label: "Summary", name: "summary", widget: "text"}
+            - {label: "Date", name: "date", widget: "datetime"}
+            - {label: "Body", name: "body", widget: "markdown"}
 
     - name: "articles"
-    label: "Articles & Stories"
+    label: "Articles"
     folder: "content/articles"
     create: true
+    slug: "{{slug}}"
     fields:
             - {label: "Title", name: "title", widget: "string"}
-            - {label: "Publish Date", name: "date", widget: "datetime"}
-            - {label: "Featured Image", name: "image", widget: "image"}
-            - {label: "Author", name: "author", widget: "string"}
-            - {label: "Summary", name: "summary", widget: "text"}
+            - {label: "Date", name: "date", widget: "datetime"}
             - {label: "Body", name: "body", widget: "markdown"}
 
     - name: "stories"
-    label: "Success Stories"
+    label: "Stories"
     folder: "content/stories"
     create: true
+    slug: "{{slug}}"
     fields:
-            - {label: "Quote Title", name: "title", widget: "string"}
-            - {label: "Publish Date", name: "date", widget: "datetime"}
-            - {label: "Photo", name: "image", widget: "image"}
-            - {label: "Location", name: "location", widget: "string"}
-            - {label: "Quote", name: "summary", widget: "text"}
+            - {label: "Title", name: "title", widget: "string"}
+            - {label: "Date", name: "date", widget: "datetime"}
+            - {label: "Body", name: "body", widget: "markdown"}
